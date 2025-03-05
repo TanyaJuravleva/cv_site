@@ -22,6 +22,7 @@ jobs:
        run: |
          gem install bundler
          bundle install
+         cd cv
 
      - name: Build Jekyll site
        run: |
@@ -31,4 +32,4 @@ jobs:
        uses: peaceiris/actions-gh-pages@v3
        with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
-         publish_dir: ./cv/_site
+         publish_dir: ./_site
