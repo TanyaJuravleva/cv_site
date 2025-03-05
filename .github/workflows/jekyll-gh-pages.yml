@@ -21,7 +21,6 @@ jobs:
      - name: Install dependencies
        run: |
          gem install bundler
-         bundle install
          cd cv
 
      - name: Build Jekyll site
